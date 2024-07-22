@@ -1,12 +1,13 @@
 import './App.css'
-import OnclickBgChange from './components/OnclickBgChange'
+import Carousel from './components/Carousel';
+import Header from './components/Header';
 
 function App() {
 
   return (
     <>
-    <OnclickBgChange /> 
-   
+      <Header />
+      <Carousel />
     </>
   )
 }
