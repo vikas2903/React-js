@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from '../Product';
+import Product from './Product';
 import mens_kurta from '../data/Men/men_kurta';
 import mens_jeans from '../data/Men/men_jeans.json'
 import men_shirt from '../data/Men/men_shirt.json'
