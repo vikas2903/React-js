@@ -1,9 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import men_shirt from '../data/Men/men_shirt.json';
-import {Link} from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function Menproducts() {
+
+
+  useEffect(() => {
+
+    const fetchdeodata = () => {
+      axios.get('https://api.restful-api.dev/objects')
+        .then(response => {
+
+          console.log(response.data);
+
+        })
+        .catch(error => {
+
+          console.error('There was an error fetching the data:', error);
+        });
+    };
+    fetchdeodata();
+  })
+
+
+  console.log("vikas");
+
   return (
     <>
       <div className="bg-white">
